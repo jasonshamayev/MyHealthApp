@@ -1,6 +1,7 @@
 package com.example.loginregistration;
 
 import android.app.DatePickerDialog;
+import android.app.Notification;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,22 +12,33 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TimePicker;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+
+import static com.example.loginregistration.NotifClass.CHANNEL_1_ID;
+//import static com.codinginflow.notificationsexample.App.CHANNEL_2_ID;
+
 import java.util.Calendar;
+
+import static com.example.loginregistration.NotifClass.CHANNEL_1_ID;
 
 public class NotificationActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btnDatePicker, btnTimePicker, btnNotify, mBackNotification;
-    EditText txtDate, txtTime, eTitle, etContent;
+    EditText txtDate, txtTime;
+    private EditText eTitle, etContent;
     private int mYear, mMonth, mDay, mHour, mMinute;
-    ////DatePickerDialog dpd;
-    //TimePickerDialog tpd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
 
-        Button btnNotify = (Button)findViewById(R.id.btnNotify);
+        eTitle = findViewById(R.id.eTitle);
+        etContent = findViewById(R.id.etContent);
+
+        btnNotify = (Button)findViewById(R.id.btnNotify);
         btnTimePicker=(Button)findViewById(R.id.btn_time);
         txtTime=(EditText)findViewById(R.id.in_time);
 
@@ -37,9 +49,29 @@ public class NotificationActivity extends AppCompatActivity implements View.OnCl
         });
         //btnDatePicker.setOnClickListener(this);
         btnTimePicker.setOnClickListener(this);
-
-
     }
+
+
+public void sendOnChannel1(View v) {
+    btnNotify.setOnClickListener(
+            new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                String title = eTitle.getText().toString();
+                String message = etContent.getText().toString();
+                Notification notification = new NotificationCompat.Builder(NotificationActivity.this, CHANNEL_1_ID)
+                .setSmallIcon(R.drawable.ic_android_black_24dp)
+                .setContentTitle(title)
+                .setContentText(message)
+                .setPriority(NotificationCompat.PRIORITY_HIGH)
+                .setCategory(NotificationCompat.CATEGORY_MESSAGE)
+                .build();
+                NotificationManagerCompat notificationManager = NotificationManagerCompat.from(NotificationActivity.this);;
+                notificationManager.notify(1, notification);
+                }
+            }
+    );
+}
 
     @Override
     public void onClick(View v) {
