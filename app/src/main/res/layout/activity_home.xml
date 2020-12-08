@@ -163,14 +163,14 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:contentDescription="@string/settingsHome"
-                app:srcCompat="@drawable/vitalsigns" />
+                app:srcCompat="@drawable/diet" />
 
             <ImageButton
                 android:id="@+id/imageButton_Communication"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:contentDescription="@string/vital"
-                app:srcCompat="@drawable/vitalsigns" />
+                app:srcCompat="@drawable/commu" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
