@@ -59,10 +59,11 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent searchIntent = new Intent(HomeActivity.this, Search.class);
                 startActivity(searchIntent);
-            }
+                                        }
+        });
 
 
-        mButtonMonitoringSystem.setOnClickListener(view -> {
+        mButtonMonitoringSystem.setOnClickListener(v -> {
             Intent monitoringSystemIntent = new Intent(HomeActivity.this, MonitoringSystemActivity.class);
             startActivity(monitoringSystemIntent);
 
