@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginRegistration">
-        <activity android:name=".ChangePasswordActivity"></activity>
+        <activity android:name=".SearchResults"></activity>
+        <activity android:name=".Search" />
+        <activity android:name=".ReviewInformation" />
+        <activity android:name=".VitalSigns" />
+        <activity android:name=".ChangePasswordActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".MonitoringSystemActivity" />

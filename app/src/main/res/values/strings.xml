@@ -184,4 +184,8 @@
     <string name="confirm_new_password2">Confirm New Password</string>
     <string name="change_password1">Change Password</string>
     <string name="register_new_user">Register New User</string>
+    <string name="results">Search Results</string>
+    <string name="vital">Vital Signs</string>
+    <string name="VitalSigns">Search</string>
+    <string name="search">Search</string>
 </resources>
