@@ -163,7 +163,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:contentDescription="@string/settingsHome"
-                //app:srcCompat="@android:drawable/ap" />
+                app:srcCompat="@drawable/vitalsigns" />
 
             <ImageButton
                 android:id="@+id/imageButton_Communication"
