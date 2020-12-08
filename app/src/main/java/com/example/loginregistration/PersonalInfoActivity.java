@@ -1,5 +1,6 @@
 package com.example.loginregistration;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -38,11 +39,13 @@ public class PersonalInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_info);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         ImageView mImageViewBackPersonalInfo = (ImageView) findViewById(R.id.mImageViewBackPersonalInfo);
         mImageViewBackPersonalInfo.setOnClickListener(view -> {
-            Intent MedViewToHome = new Intent( PersonalInfoActivity.this, HomeActivity.class);
-            //startActivity(MedViewToHome);
+            Intent PersonalViewToHome = new Intent( PersonalInfoActivity.this, HomeActivity.class);
+            startActivity(PersonalViewToHome);
         });
 
         myDb = new DatabaseHelper(this);
@@ -125,7 +128,7 @@ public class PersonalInfoActivity extends AppCompatActivity {
                             buffer.append("Visit Date: "+ result.getString(11)+"\n\n");
                         }
                         //show all data
-                        showMessage("Data", buffer.toString());
+                        showMessage("Saved Personal Information", buffer.toString());
                     }
                 }
         );
