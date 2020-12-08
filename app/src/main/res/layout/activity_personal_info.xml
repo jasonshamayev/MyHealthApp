@@ -16,8 +16,8 @@
 
         <ImageView
             android:id="@+id/mImageViewBackPersonalInfo"
-            android:layout_width="53dp"
-            android:layout_height="58dp"
+            android:layout_width="38dp"
+            android:layout_height="42dp"
             android:layout_marginEnd="358dp"
             android:layout_marginRight="358dp"
             android:layout_marginBottom="42dp"

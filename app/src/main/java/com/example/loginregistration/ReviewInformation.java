@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,6 +33,13 @@ public class ReviewInformation extends AppCompatActivity {
         setContentView(R.layout.activity_review_information);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+
+
+
+        ImageView reviewB = (ImageView) findViewById(R.id.reviewBack);
+        reviewB.setOnClickListener(view -> {
+            finish();
+        });
 
 
         myDb = new DatabaseHelper(this);

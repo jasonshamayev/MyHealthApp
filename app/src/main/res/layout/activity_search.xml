@@ -38,7 +38,7 @@
         android:layout_marginTop="0dp"
 
         android:layout_marginBottom="8dp"
-        android:hint="input keyword" />
+        android:hint="Input Keyword" />
 
     <ImageButton
         android:id="@+id/imageButtonSearch"
@@ -50,6 +50,38 @@
         android:tint="#FF5722"
         app:srcCompat="@drawable/ic_action_name"
         tools:ignore="VectorDrawableCompat" />
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+    <TextView
+        android:id="@+id/textView_searchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="               Search"
+        android:textColor="#FBFAFA"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/mImageViewBack"
+        android:layout_width="53dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="358dp"
+        android:layout_marginRight="358dp"
+        android:layout_marginBottom="42dp"
+        android:contentDescription="@string/backbutton"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+
+
 
 
 </RelativeLayout>

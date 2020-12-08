@@ -138,4 +138,31 @@
         android:text="Next"
         app:backgroundTint="#FF5722" />
 
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_vitalView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+    <TextView
+        android:id="@+id/textView_vitalTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="          Add Vital Signs"
+        android:textColor="#FBFAFA"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/vitalBack"
+        android:layout_width="53dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="358dp"
+        android:layout_marginRight="358dp"
+        android:layout_marginBottom="42dp"
+        android:contentDescription="@string/backbutton"
+        app:srcCompat="@drawable/abc_vector_test" />
+
 </RelativeLayout>
