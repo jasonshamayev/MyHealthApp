@@ -189,4 +189,25 @@
     <string name="VitalSigns">Search</string>
     <string name="search">Search</string>
     <string name="enter_time_in_military_xx_xx">Enter time in Military (XX:XX)</string>
+    <string name="done">Done</string>
+    <string name="existing_foods">Existing Foods:</string>
+    <string name="input_new_food">Input New Food</string>
+    <string name="diet_logo">diet_logo</string>
+    <string name="next">Next</string>
+    <string name="diet_and_weight_management">Diet and Weight Management</string>
+    <string name="Phone">phone</string>
+    <string name="Communications">Communications</string>
+    <string name="Diet">Diet</string>
+    <string name="action_comm">Communications</string>
+    <string name="action_diet">Diet</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="message">Message</string>
+    <string name="call">Call</string>
+    <string name="eggs">Eggs</string>
+    <string name="_100">100</string>
+    <string name="new_foods_here">New Foods Here</string>
+    <string name="serving_s">Serving(s)</string>
+    <string name="calories">Calories</string>
+    <string name="change_weight">Change Weight</string>
 </resources>
