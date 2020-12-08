@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDBEB0"
+    tools:context=".Search">
+
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+
+        ></RelativeLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginTop="330dp"
+        android:text="   Enter a search keyword: "
+
+        android:textSize="18sp"
+
+        />
+
+    <EditText
+        android:id="@+id/keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginTop="0dp"
+
+        android:layout_marginBottom="8dp"
+        android:hint="input keyword" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSearch"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/keyword"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="VitalSigns"
+        android:tint="#FF5722"
+        app:srcCompat="@drawable/ic_action_name"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</RelativeLayout>

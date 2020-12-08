@@ -47,6 +47,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_26 = "KIN_EMAIL";
     public static final String COL_27 = "VISIT_DATE";
     public static final String COL_28 = "User_ID";
+    public static final String TABLE_VITAL_SIGNS = "vitalsigns";
+    public static final String COL_35 = "USERID";
+    public static final String COL_31 = "CHOLESTEROL";
+    public static final String COL_32 = "SYSTOLIC";
+    public static final String COL_33 = "GLUCOSE";
+    public static final String COL_34 = "HEART_RATE";
+    public static final String COL_36 = "DIASTOLIC";
+
     protected static String currentUser = "";
     protected static int currentUserID = -1;
     protected static String currentUserEmail = "";
@@ -60,6 +68,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("CREATE TABLE registeruser (ID INTEGER PRIMARY KEY AUTOINCREMENT, Username TEXT UNIQUE, Password TEXT, Name TEXT, Email TEXT, Address TEXT, Phone TEXT, Security_Question TEXT, Security_Answer TEXT)");
         sqLiteDatabase.execSQL("CREATE TABLE medication (Medication_ID INTEGER PRIMARY KEY AUTOINCREMENT, Medication_Name TEXT, Time_To_Take TEXT, How_Much TEXT, How_Long TEXT, User_ID INTEGER, FOREIGN KEY(User_ID) REFERENCES registeruser(ID) )");
         sqLiteDatabase.execSQL("CREATE TABLE personalInfo (ID INTEGER PRIMARY KEY AUTOINCREMENT, WEIGHT INT, HEIGHT INT, AGE INT, GENDER TEXT, DOCTOR_NAME TEXT, DOCTOR_EMAIL TEXT, PHARM_NAME TEXT, PHARM_EMAIL TEXT, KIN_NAME TEXT, KIN_EMAIL TEXT, VISIT_DATE TEXT, User_ID INTEGER, FOREIGN KEY(USER_ID) REFERENCES registeruser(ID))");
+        sqLiteDatabase.execSQL("CREATE TABLE vitalsigns (ID INTEGER PRIMARY KEY AUTOINCREMENT, CHOLESTEROL INT, SYSTOLIC INT,DIASTOLIC INT, GLUCOSE INT, HEART_RATE INT,USERNAME TEXT)");
+
     }
 
     @Override
@@ -67,6 +77,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + USER_INFO);
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + MEDICATION);
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_PERSONAL_INFO);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_VITAL_SIGNS);
+
         onCreate(sqLiteDatabase);
     }
 
@@ -276,4 +288,69 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.update(TABLE_NAME_PERSONAL_INFO, contentValues, "User_ID = ?", new String[] {String.valueOf(currentUserID)} );
         return true;
     }
+    public boolean addVitalSigns(String username,String heartRate,String cholesterol,String glucose, String bloodPressure,String DiastolicbloodPressure) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(COL_31, cholesterol);
+        contentValues.put(COL_32, bloodPressure);
+        contentValues.put(COL_36, DiastolicbloodPressure);
+
+        contentValues.put(COL_33, glucose);
+        contentValues.put(COL_34, heartRate);
+        contentValues.put(COL_2,username);
+
+        long result = db.insert("vitalsigns", null, contentValues);
+        if (result == -1)
+            return false;
+        else
+            return true;
+    }
+
+    public boolean updateVitalSigns(String username,String cholesterol,String bloodPressure,String glucose,String heartRate,String DiastolicbloodPressure)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COL_31,cholesterol);
+        contentValues.put(COL_32,bloodPressure);
+        contentValues.put(COL_36,DiastolicbloodPressure);
+
+        contentValues.put(COL_33,glucose);
+        contentValues.put(COL_34,heartRate);
+
+        db.update("vitalsigns",contentValues,"USERNAME = ?",new String[]{username});
+        return true;
+
+    }
+
+
+    public Cursor checkVitalSignsExist(String username)
+    {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String [] columns = {COL_31,COL_32,COL_33,COL_34,COL_36};
+        String selection = COL_2+ "=?";
+        String[] loggedIn = {username};
+
+        Cursor result = db.query("vitalsigns",columns,"USERNAME = ?",loggedIn,null,null,null);
+        return result;
+
+    }
+    public Cursor checkPersonalInfo( ) {
+        SQLiteDatabase read = this.getReadableDatabase();
+        String[] columns = {COL_1};//,COL_18,COL_19,COL_20,COL_21,COL_22,COL_23,COL_24,COL_25,COL_26,COL_27};
+        String selection = COL_2 + "=?";
+        String[] loggedIn = {currentUser};
+        //int id = getIntent().getIntExtra();
+        //Log.d("User:",loggedIn[0]);
+        Cursor cursor = read.query(USER_INFO,columns,selection,loggedIn,null,null,null);
+
+  //      cursor.moveToFirst();
+  //      currentUserID = cursor.getInt(0);
+   //     cursor.close();
+        return cursor;
+    }
+
+
 }
