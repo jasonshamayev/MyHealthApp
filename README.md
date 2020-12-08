@@ -60,7 +60,7 @@ Medication:
   -Respective functions in DatabaseHelper file to store into DB
 Resources: //add all resources
 
-Jason Shaymev: 100
+Saugat K: 100
 Implementations:
 Login/Registration:
   -User can register
