@@ -31,8 +31,8 @@ public class HomeActivity extends AppCompatActivity {
 
         ImageButton mButtonMonitoringSystem = (ImageButton) findViewById(R.id.imageButton_MonitoringSystem);
 
-        ImageButtonm ButtonDiet = (ImageButton) findViewById(R.id.imageButton_Diet);
-        ImageButtonm ButtonComm = (ImageButton) findViewById(R.id.imageButton_Communications);
+        ImageButton mButtonDiet = (ImageButton) findViewById(R.id.imageButton_Diet);
+        ImageButton mButtonComm = (ImageButton) findViewById(R.id.imageButton_Communication);
 
 
         mButtonMedication.setOnClickListener(view -> {
