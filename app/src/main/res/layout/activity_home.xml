@@ -154,6 +154,43 @@
                 android:text="@string/search"
                 android:textStyle="bold" />
         </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton_Diet"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/settingsHome"
+                //app:srcCompat="@android:drawable/ap" />
+
+            <ImageButton
+                android:id="@+id/imageButton_Communication"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/vital"
+                app:srcCompat="@drawable/vitalsigns" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_Diet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/action_diet"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView_Communication"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/action_comm"
+                android:textStyle="bold" />
+        </TableRow>
     </TableLayout>
 
 
