@@ -31,6 +31,9 @@ public class HomeActivity extends AppCompatActivity {
 
         ImageButton mButtonMonitoringSystem = (ImageButton) findViewById(R.id.imageButton_MonitoringSystem);
 
+        ImageButtonm ButtonDiet = (ImageButton) findViewById(R.id.imageButton_Diet);
+        ImageButtonm ButtonComm = (ImageButton) findViewById(R.id.imageButton_Communications);
+
 
         mButtonMedication.setOnClickListener(view -> {
             Intent medicationIntent = new Intent(HomeActivity.this, ViewMedicationActivity.class);
@@ -66,6 +69,24 @@ public class HomeActivity extends AppCompatActivity {
         mButtonMonitoringSystem.setOnClickListener(v -> {
             Intent monitoringSystemIntent = new Intent(HomeActivity.this, MonitoringSystemActivity.class);
             startActivity(monitoringSystemIntent);
+
+        });
+
+        mButtonDiet.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent dietInfoIntent = new Intent(HomeActivity.this, DietActivity.class);
+                startActivity(dietInfoIntent);
+            }
+
+        });
+
+        mButtonComm.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent comInfoIntent = new Intent(HomeActivity.this, CommunicationsActivity.class);
+                startActivity(comInfoIntent);
+            }
 
         });
     }
