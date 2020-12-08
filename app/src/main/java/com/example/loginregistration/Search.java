@@ -46,16 +46,21 @@ public class Search extends AppCompatActivity {
                 String vsign = "";
                 StringBuffer buffer = new StringBuffer();
 
-/*
-                Cursor check = myDb.checkPersonalInfo(); ////
-                check.moveToFirst();
-                Toast.makeText(Search.this, "this is it: " + check.getString(0), Toast.LENGTH_LONG).show();
-//                check.close();
-*/
-
 
                 Cursor cur = myDb.checkVitalSignsExist(myDb.currentUser.toString());
-                if (cur.getCount() == 0) {
+
+                if (("username".toLowerCase()).equals(key.toLowerCase().trim()))
+                {
+
+                    vsign = "Username: " + myDb.currentUser.toString();
+
+                    Intent resultIntent = new Intent(Search.this, SearchResults.class);
+                    resultIntent.putExtra("resultvalue", vsign);
+                    startActivity(resultIntent);
+                }
+
+
+               else if (cur.getCount() == 0) {
                     int i=0;
 
                     if (("Cholesterol".toLowerCase()).equals(key.toLowerCase().trim()))
