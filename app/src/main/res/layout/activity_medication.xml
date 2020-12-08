@@ -87,12 +87,12 @@
 
             <EditText
                 android:id="@+id/editTextTime"
-                android:layout_width="wrap_content"
+                android:layout_width="243dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:ems="10"
-                android:hint="@string/time_of_day_to_take"
+                android:hint="@string/enter_time_in_military_xx_xx"
                 android:importantForAutofill="no"
                 android:inputType="time" />
         </TableRow>

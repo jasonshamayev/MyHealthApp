@@ -188,4 +188,5 @@
     <string name="vital">Vital Signs</string>
     <string name="VitalSigns">Search</string>
     <string name="search">Search</string>
+    <string name="enter_time_in_military_xx_xx">Enter time in Military (XX:XX)</string>
 </resources>
