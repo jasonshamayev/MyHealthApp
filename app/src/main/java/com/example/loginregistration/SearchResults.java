@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SearchResults extends AppCompatActivity {
@@ -20,6 +21,12 @@ public class SearchResults extends AppCompatActivity {
         setContentView(R.layout.activity_search_results);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+
+        ImageView mImg = (ImageView) findViewById(R.id.mBack);
+        mImg.setOnClickListener(view -> {
+            finish();
+        });
+
 
 
         resl = (TextView)findViewById(R.id.result);

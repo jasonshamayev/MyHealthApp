@@ -11,12 +11,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Search extends AppCompatActivity {
     DatabaseHelper myDb;
     ImageButton searchButton;
     EditText searchWord;
+//    Button Back;
+
     //  public static String key;
 
     String key;
@@ -29,6 +32,11 @@ public class Search extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
+        ImageView mImage = (ImageView) findViewById(R.id.mImageViewBack);
+        mImage.setOnClickListener(view -> {
+            Intent PersonalViewToHome = new Intent( Search.this, HomeActivity.class);
+            startActivity(PersonalViewToHome);
+        });
 
 
         myDb = new DatabaseHelper(this);

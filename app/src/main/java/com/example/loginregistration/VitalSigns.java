@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,13 @@ public class VitalSigns extends AppCompatActivity {
         setContentView(R.layout.activity_vital_signs);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
+
+        ImageView backB = (ImageView) findViewById(R.id.vitalBack);
+        backB.setOnClickListener(view -> {
+            Intent PersonalViewToHome = new Intent( VitalSigns.this, HomeActivity.class);
+            startActivity(PersonalViewToHome);
+        });
+
 
         myDb = new DatabaseHelper(this);
 
