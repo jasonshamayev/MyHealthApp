@@ -37,6 +37,10 @@
         <activity android:name=".MonitoringSystemActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".PersonalInfoActivity" />
+        <activity android:name=".WeightActivity"/>
+        <activity android:name=".NewFoodActivity"/>
+        <activity android:name=".CommunicationsActivity"/>
+        <activity android:name=".DietActivity"/>
         <activity
             android:name=".ViewMedicationActivity"
             android:label="@string/title_activity_view_medication"
