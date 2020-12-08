@@ -1,15 +1,13 @@
 # MyHealthApp
 
 Devasri Warrier: 1001536613
-Implementations:
-Personal Information:
+Implementation 1: Personal Information:
   -Add Personal Information 
   -View Personal Information saved in the DB
   -Update Personal Information 
   -Respective functions in DatabaseHelper file to store into DB
   
-Monitoring System:
-  On time Medication: -positive affirmation
+Implementation 2: Monitoring System: On time Medication: -positive affirmation
   Late Medication: -NOK texted notice,  -user texted reminder, -Doctor + Pharm. email prepopulated message and emails pre-filled (if logged into email app
   and android permissions allowed)
   -User can add a self notification message  
