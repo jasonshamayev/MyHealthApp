@@ -352,5 +352,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
+    public boolean updateWeightInfo(String weight) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        SQLiteDatabase read = getReadableDatabase();
+        String[] columns = {COL_1};
+        String selection = COL_2 + "=?";
+        String[] loggedIn = {currentUser};
+        //int id = getIntent().getIntExtra();
+        //Log.d("User:",loggedIn[0]);
+        Cursor cursor = read.query(USER_INFO,columns,selection,loggedIn,null,null,null);
+
+        cursor.moveToFirst();
+        currentUserID = cursor.getInt(0);
+
+        //contentValues.put("ID", id);
+        contentValues.put("WEIGHT", weight);
+        contentValues.put("User_ID", currentUserID);
+        cursor.close();
+        db.update(TABLE_NAME_PERSONAL_INFO, contentValues, "User_ID = ?", new String[] {String.valueOf(currentUserID)} );
+        return true;
+    }
 
 }
