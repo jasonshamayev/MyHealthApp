@@ -40,7 +40,7 @@ Medication:
   -Respective functions in DatabaseHelper file to store into DB
 Resources: //add all resources
 
-Jason Shamayev: 100
+Jason Shamayev: 1001627879
 Implementations:
 Login/Registration:
   -User can register
