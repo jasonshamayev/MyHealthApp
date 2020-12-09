@@ -210,4 +210,5 @@
     <string name="serving_s">Serving(s)</string>
     <string name="calories">Calories</string>
     <string name="change_weight">Change Weight</string>
+    <string name="MED_TRACKER">MEDICATION TRACKER</string>
 </resources>

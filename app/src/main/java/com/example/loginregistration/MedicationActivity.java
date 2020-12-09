@@ -76,7 +76,9 @@ public class MedicationActivity extends AppCompatActivity {
             } else if (TextUtils.isEmpty(howLong)) {
                 mTextHowLong.setError("Length of time needed to take medication is required!");
             } else {
-                boolean val = db.addMedication(med, timeToTake, dosage, howLong);
+                //boolean val = db.addMedication(med, timeToTake, dosage, howLong);
+                boolean val = db.addMedication(db.currentUser.toString(),String.valueOf(med),String.valueOf(timeToTake),String.valueOf(dosage),String.valueOf(howLong));
+
 
                 if (val) {
                     Toast.makeText(MedicationActivity.this, "Medication Information Saved", Toast.LENGTH_SHORT).show();

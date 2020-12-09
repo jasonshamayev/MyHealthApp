@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDBEB0"
+    tools:context=".Search">
+
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+
+        ></RelativeLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginTop="330dp"
+        android:text="  Enter medication to track: "
+
+        android:textSize="18sp"
+
+        />
+
+    <EditText
+        android:id="@+id/keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginTop="0dp"
+
+        android:layout_marginBottom="8dp"
+        android:hint="Medication Name" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSearch"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/keyword"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="VitalSigns"
+        android:tint="#FF5722"
+        app:srcCompat="@drawable/ic_action_name"
+        tools:ignore="VectorDrawableCompat" />
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/textView_Track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="               Track"
+        android:textColor="#FBFAFA"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/mImageViewBack"
+        android:layout_width="53dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="358dp"
+        android:layout_marginRight="358dp"
+        android:layout_marginBottom="42dp"
+        android:contentDescription="@string/backbutton"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+
+
+
+
+</RelativeLayout>

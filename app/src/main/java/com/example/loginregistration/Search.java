@@ -18,10 +18,6 @@ public class Search extends AppCompatActivity {
     DatabaseHelper myDb;
     ImageButton searchButton;
     EditText searchWord;
-//    Button Back;
-
-    //  public static String key;
-
     String key;
 
 

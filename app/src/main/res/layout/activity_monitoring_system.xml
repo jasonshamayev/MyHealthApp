@@ -111,5 +111,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/mButtonTrackMed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Medication"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toTopOf="@+id/btnSetNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Monitor_label"
+        app:layout_constraintVertical_bias="0.978" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
