@@ -74,12 +74,13 @@ Saugat K: 1001644419, saugat.karki@mavs.uta.edu, 8174375349
 
 Implementations:
 Search:
--Missing functionality: Search function works only for vital signs and username. As we used SQL lite, every one made a seperate table to store data. So,
+-Missing functionality: Search function works only for vital signs and username. Reason: As we used SQL lite, every one made a seperate table to store data. So,
  everyone had a separate numeric user ID to identify each user. So, I couldn't figure out a way to do extraction of data from their table for a specific user
  as each table had a seperate type of unique ID to idenitify each user.
  The reason search  works for Vital Signs is because while creating table for storing vital signs, I just used the usernames of users as a unique
  ID. So, I could later match the current user's username with the username on the table and extract the required data. Since there can't be two users with same username
  in our app, the search funcionality works perfectly with vital signs.
+ 
 -Users can search for their username by typing "username" in the search field.
 -Users can type any vital signs names(cholesterol, heart rate, blood pressure, glucose) in the search field.
 -If the Vital Signs data has been previously added or updated, users can search for any of the vital Signs. If not, a message will be printed asking user to  initialize
