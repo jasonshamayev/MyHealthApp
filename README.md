@@ -89,7 +89,9 @@ Search:
 -Users can search for their username
 -If the Vital Signs data has been previously added or updated, users can search for any of the vital Signs. 
 
-Resources: //add all resources
+Resources:
+https://www.youtube.com/watch?v=KUq5wf3Mh0c&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=4
+https://www.youtube.com/watch?v=NhrD_fokd7g
 
 
 
