@@ -110,8 +110,8 @@ Diet:
 -Enter amount of servings
 -User can pick food choice from spinner
 -User can press on New Food to add custom food.
--User press on next to display current total of calories
--User press on done
+-User press on next to display servings
+-User press on done to display current total of calories
 
 
 Communications:
