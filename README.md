@@ -1,6 +1,6 @@
 # MyHealthApp
 
-Devasri Warrier: 1001536613
+Devasri Warrier: 1001536613 devasri.warrier@mavs.uta.edu
 Implementation 1: Personal Information:
   -Add Personal Information 
   -View Personal Information saved in the DB
@@ -11,10 +11,8 @@ Implementation 2: Monitoring System: On time Medication: -positive affirmation
   Late Medication: -NOK texted notice,  -user texted reminder, -Doctor + Pharm. email prepopulated message and emails pre-filled (if logged into email app
   and android permissions allowed)
   -User can add a self notification message  
-  -Medication Tracker of dosage + days left to complete medication**
-    -Notification to take medication daily 
-    -User tracks "taken" or "missed"
-    -Notification of missed medication, user asked to select "no" in Monitoring System activity to notify Doc. Pharm. and NOK of incident 
+  -Medication Tracker of dosage + days left to complete medication
+    
 Resources:
 https://www.youtube.com/watch?v=tTbd1Mfi-Sk
 https://www.youtube.com/watch?v=cp2rL3sAFmI&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07
