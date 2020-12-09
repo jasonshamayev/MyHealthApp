@@ -18,15 +18,11 @@ Missing functionality: -not pulling data from DB of Personal Info. to text/email
 
 Resources:
 https://www.youtube.com/watch?v=tTbd1Mfi-Sk
-https://www.youtube.com/watch?v=cp2rL3sAFmI&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07
-https://www.youtube.com/watch?v=p8TaTgr4uKM&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=2
-https://www.youtube.com/watch?v=T0ClYrJukPA&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=3
-https://www.youtube.com/watch?v=KUq5wf3Mh0c&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=4
-https://www.youtube.com/watch?v=PA4A9IesyCg&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=5
+https://www.youtube.com/watch?v=cp2rL3sAFmI&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07 (playlist videos 1-5)
 https://www.youtube.com/watch?v=oLngUva-Ves
+https://www.codota.com/code/java/classes/android.app.DatePickerDialog //in code, works, but not combined with implementations to basically useless 
 
-
-Jason Shamayev: 100
+Jason Shamayev: 
 Implementations:
 Login/Registration:
   -User can register
@@ -64,7 +60,7 @@ Settings:
 Home Screen:
   -Set up the layout for home screen
   -Made back buttons for navigation through app
-Resources: //add all resources
+Resources:
 https://www.youtube.com/watch?v=d5jfNSFu45U
 https://developer.android.com/studio/write
 
@@ -97,15 +93,9 @@ Vital Signs:
 -Submit vital signs
 -Update vital signs
 
-
 Resources:
 https://www.youtube.com/watch?v=KUq5wf3Mh0c&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=4
 https://www.youtube.com/watch?v=NhrD_fokd7g
-
-
-
-
-
 
 Cesar Rea: 1001643491
 Cesar.rea2@mavs.uta.edu
@@ -121,7 +111,6 @@ Diet:
 -User can press on New Food to add custom food.
 -User press on next to display current total of calories
 -User press on done
-
 
 Communications:
 -Users can enter phone number
