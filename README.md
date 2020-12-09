@@ -2,19 +2,19 @@
 
 Devasri Warrier: 1001536613
 Implementation 1: Personal Information:
-  -Add Personal Information 
+  -Add Personal Information
   -View Personal Information saved in the DB
-  -Update Personal Information 
+  -Update Personal Information
   -Respective functions in DatabaseHelper file to store into DB
-  
+
 Implementation 2: Monitoring System: On time Medication: -positive affirmation
   Late Medication: -NOK texted notice,  -user texted reminder, -Doctor + Pharm. email prepopulated message and emails pre-filled (if logged into email app
   and android permissions allowed)
   -User can add a self notification message  
   -Medication Tracker of dosage + days left to complete medication**
-    -Notification to take medication daily 
+    -Notification to take medication daily
     -User tracks "taken" or "missed"
-    -Notification of missed medication, user asked to select "no" in Monitoring System activity to notify Doc. Pharm. and NOK of incident 
+    -Notification of missed medication, user asked to select "no" in Monitoring System activity to notify Doc. Pharm. and NOK of incident
 Resources:
 https://www.youtube.com/watch?v=tTbd1Mfi-Sk
 https://www.youtube.com/watch?v=cp2rL3sAFmI&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07
@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=T0ClYrJukPA&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEag
 https://www.youtube.com/watch?v=KUq5wf3Mh0c&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=4
 https://www.youtube.com/watch?v=PA4A9IesyCg&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=5
 **add more still
-    
+
 Jason Shamayev: 100
 Implementations:
 Login/Registration:
@@ -31,14 +31,14 @@ Login/Registration:
   -User can log in
   -"Forgot password"
   -"reset password" (security questions)
-  -"change password" 
+  -"change password"
   -log out
   -Necessary validations if values not entered correctly
   -Respective functions in DatabaseHelper file to store into DB
 Medication:
   -User can add medication
   -User can view list of all medications entered
-  -Necessary validations if values not entered correctly 
+  -Necessary validations if values not entered correctly
   -Respective functions in DatabaseHelper file to store into DB
 Resources: //add all resources
 
@@ -54,10 +54,10 @@ Login/Registration:
 Medication:
   -User can add medication
   -User can view list of all medications entered
-  -Necessary validations if values not entered correctly 
+  -Necessary validations if values not entered correctly
   -Respective functions in DatabaseHelper file to store into DB
 Settings:
-  -Log out 
+  -Log out
   -Change Password
 Home Screen:
   -Set up the layout for home screen
@@ -78,16 +78,16 @@ Contact phone number: 8174375349
 Search function works only for vital signs.
 
 Implementations:
-Vital Signs: 
+Vital Signs:
 -Enter Vital Signs (glucose, cholesterol, blood pressure, heart rate)
 -Necessary validations if not entered correctly
 -Review information regarding vital signs
 -Submit vital signs
 -Update vital signs
 
-Search: 
+Search:
 -Users can search for their username
--If the Vital Signs data has been previously added or updated, users can search for any of the vital Signs. 
+-If the Vital Signs data has been previously added or updated, users can search for any of the vital Signs.
 
 Resources:
 https://www.youtube.com/watch?v=KUq5wf3Mh0c&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=4
@@ -95,4 +95,31 @@ https://www.youtube.com/watch?v=NhrD_fokd7g
 
 
 
-    
+
+
+
+Cesar Rea: 1001643491
+Cesar.rea2@mavs.uta.edu
+Contact phone number: 2143257031
+
+When going into the New Food Section of Diet, the app will not count the calories
+and start from zero when back to main page of diet
+
+Implementations:
+Diet:
+-Enter amount of servings
+-User can pick food choice from spinner
+-User can press on New Food to add custom food.
+-User press on next to display current total of calories
+-User press on done 
+
+
+Communications:
+-Users can enter phone number
+-Users can enter SMS
+-User can press on Message or Call
+
+Resources:
+https://www.youtube.com/watch?v=KUq5wf3Mh0c&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=4
+https://www.youtube.com/watch?v=4HkTrSkYAQ4
+https://www.youtube.com/watch?v=pajvuBZc2WA
