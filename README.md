@@ -105,6 +105,8 @@ Contact phone number: 2143257031
 When going into the New Food Section of Diet, the app will not count the calories
 and start from zero when back to main page of diet
 
+New Food Names entered will not be added to the database, so it will not shown again
+
 Implementations:
 Diet:
 -Enter amount of servings
