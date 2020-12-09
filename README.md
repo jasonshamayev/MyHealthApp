@@ -75,9 +75,21 @@ https://developer.android.com/studio/write
 
 Saugat K: 1001644419, saugat.karki@mavs.uta.edu, 8174375349
 
-Search function works only for vital signs.
 
 Implementations:
+Search:
+-Search function works only for vital signs and username. As we used SQL lite, every one made a seperate table to store data. So, 
+ everyone had a separate numeric user ID to identify each user. So, I couldn't figure out a way to do extraction of data from their table for a specific user
+ as each table had a seperate type of unique ID to idenitify each user. 
+ The reason search  works for Vital Signs is because while creating table for storing vital signs, I just used the usernames of users as a unique
+ ID. So, I could later match the current user's username with the username on the table and extract the required data. Since there can't be two users with same username 
+ in our app, the search funcionality works perfectly with vital signs. 
+-Users can search for their username by typing "username" in the search field. 
+-Users can type any vital signs names(cholesterol, heart rate, blood pressure, glucose) in the search field. 
+-If the Vital Signs data has been previously added or updated, users can search for any of the vital Signs. If not, a message will be printed asking user to  initialize 
+  vital signs. 
+-All inputs are case insensitive. 
+
 Vital Signs:
 -Enter Vital Signs (glucose, cholesterol, blood pressure, heart rate)
 -Necessary validations if not entered correctly
@@ -85,9 +97,6 @@ Vital Signs:
 -Submit vital signs
 -Update vital signs
 
-Search:
--Users can search for their username
--If the Vital Signs data has been previously added or updated, users can search for any of the vital Signs.
 
 Resources:
 https://www.youtube.com/watch?v=KUq5wf3Mh0c&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=4
@@ -110,8 +119,8 @@ Diet:
 -Enter amount of servings
 -User can pick food choice from spinner
 -User can press on New Food to add custom food.
--User press on next to display added calories
--User press on done to display current total of calories
+-User press on next to display current total of calories
+-User press on done
 
 
 Communications:
