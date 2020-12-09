@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=KUq5wf3Mh0c&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEag
 https://www.youtube.com/watch?v=PA4A9IesyCg&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07&index=5
 **add more still
     
-Jason Shaymev: 100
+Jason Shamayev: 100
 Implementations:
 Login/Registration:
   -User can register
@@ -42,15 +42,13 @@ Medication:
   -Respective functions in DatabaseHelper file to store into DB
 Resources: //add all resources
 
-Jason Shaymev: 100
+Jason Shamayev: 100
 Implementations:
 Login/Registration:
   -User can register
   -User can log in
   -"Forgot password"
   -"reset password" (security questions)
-  -"change password" 
-  -log out
   -Necessary validations if values not entered correctly
   -Respective functions in DatabaseHelper file to store into DB
 Medication:
@@ -58,25 +56,21 @@ Medication:
   -User can view list of all medications entered
   -Necessary validations if values not entered correctly 
   -Respective functions in DatabaseHelper file to store into DB
+Settings:
+  -Log out 
+  -Change Password
+Home Screen:
+  -Set up the layout for home screen
+  -Made back buttons for navigation through app
 Resources: //add all resources
+https://www.youtube.com/watch?v=d5jfNSFu45U
+https://developer.android.com/studio/write
 
 Saugat K: 100
 Implementations:
-Login/Registration:
-  -User can register
-  -User can log in
-  -"Forgot password"
-  -"reset password" (security questions)
-  -"change password" 
-  -log out
-  -Necessary validations if values not entered correctly
-  -Respective functions in DatabaseHelper file to store into DB
-Medication:
-  -User can add medication
-  -User can view list of all medications entered
-  -Necessary validations if values not entered correctly 
-  -Respective functions in DatabaseHelper file to store into DB
+
 Resources: //add all resources
+
 
 
     
