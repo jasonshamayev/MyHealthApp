@@ -16,31 +16,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginRegistration">
-
-
-        <activity android:name=".SearchResults"></activity>
+        <activity android:name=".TrackerResultActivity"></activity>
+        <activity android:name=".TrackerActivity" />
+        <activity android:name=".SearchResults" />
         <activity android:name=".Search" />
         <activity android:name=".ReviewInformation" />
         <activity android:name=".VitalSigns" />
-
         <activity android:name=".NotificationActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
         <activity android:name=".ChangePasswordActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".MonitoringSystemActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".PersonalInfoActivity" />
-        <activity android:name=".WeightActivity"/>
-        <activity android:name=".NewFoodActivity"/>
-        <activity android:name=".CommunicationsActivity"/>
-        <activity android:name=".DietActivity"/>
+        <activity android:name=".WeightActivity" />
+        <activity android:name=".NewFoodActivity" />
+        <activity android:name=".CommunicationsActivity" />
+        <activity android:name=".DietActivity" />
         <activity
             android:name=".ViewMedicationActivity"
             android:label="@string/title_activity_view_medication"

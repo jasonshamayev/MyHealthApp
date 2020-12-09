@@ -41,6 +41,7 @@ public class MonitoringSystemActivity extends AppCompatActivity {
     EditText mEditTextmessage;
     Button mButtonMedSend;
     Button btnSetNotification;
+    Button mButtonTrackMed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,11 @@ public class MonitoringSystemActivity extends AppCompatActivity {
             startActivity(MonViewToHome);
         });
 
+        Button mButtonTrackMed = (Button) findViewById(R.id.mButtonTrackMed);
+        mButtonTrackMed.setOnClickListener(view -> {
+            Intent MonotoTrackerActivity = new Intent( MonitoringSystemActivity.this, TrackerActivity.class);
+            startActivity(MonotoTrackerActivity);
+        });
 
         Button btnSetNotification = (Button) findViewById(R.id.btnSetNotification);
         btnSetNotification.setOnClickListener(view -> {
