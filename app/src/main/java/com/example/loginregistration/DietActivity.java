@@ -101,7 +101,7 @@ public class DietActivity extends AppCompatActivity {
                 calorie_counter+=new_value;
                 String again = Integer.toString(new_value);
 
-                Toast.makeText(DietActivity.this, again + " Servings", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DietActivity.this, new_value + " Added Calories", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -150,4 +150,3 @@ public class DietActivity extends AppCompatActivity {
     }
 
 }
-
