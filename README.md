@@ -12,6 +12,10 @@ Implementation 2: Monitoring System: On time Medication: -positive affirmation
   and android permissions allowed)
   -User can add a self notification message  
   -Medication Tracker of dosage + days left to complete medication
+  
+  Implementation 3: Home Screen:
+  -Set up 2 layouts on home screen
+  -Made back buttons for navigation through app
 
 Missing functionality: -not pulling data from DB of Personal Info. to text/email in monitoring system. Did not have time to finish implementation but harded coded works for email/texts -Medication tracker is only able to pull the 1st medication entered, not any respective medications added thereafter
 -No notifications of missed medication. Only a self notify for a user to enter their own Notif to put in notification bar
@@ -21,24 +25,6 @@ https://www.youtube.com/watch?v=tTbd1Mfi-Sk
 https://www.youtube.com/watch?v=cp2rL3sAFmI&list=PLS1QulWo1RIaRdy16cOzBO5Jr6kEagA07 (playlist videos 1-5)
 https://www.youtube.com/watch?v=oLngUva-Ves
 https://www.codota.com/code/java/classes/android.app.DatePickerDialog //in code, works, but not combined with implementations to basically useless
-
-Jason Shamayev:
-Implementations:
-Login/Registration:
-  -User can register
-  -User can log in
-  -"Forgot password"
-  -"reset password" (security questions)
-  -"change password"
-  -log out
-  -Necessary validations if values not entered correctly
-  -Respective functions in DatabaseHelper file to store into DB
-Medication:
-  -User can add medication
-  -User can view list of all medications entered
-  -Necessary validations if values not entered correctly
-  -Respective functions in DatabaseHelper file to store into DB
-Resources: //add all resources
 
 Jason Shamayev: 1001627879
 Implementations:
@@ -58,20 +44,13 @@ Settings:
   -Log out
   -Change Password
 Home Screen:
-  -Set up the layout for home screen
+  -Set up the  for home screen
   -Made back buttons for navigation through app
 Resources:
 https://www.youtube.com/watch?v=d5jfNSFu45U
 https://developer.android.com/studio/write
 
-
-
-
-
-
 Saugat K: 1001644419, saugat.karki@mavs.uta.edu, 8174375349
-
-
 Implementations:
 Search:
 -Missing functionality: Search function works only for vital signs and username. Reason: As we used SQL lite, every one made a seperate table to store data. So,
