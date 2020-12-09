@@ -66,8 +66,28 @@ Resources: //add all resources
 https://www.youtube.com/watch?v=d5jfNSFu45U
 https://developer.android.com/studio/write
 
-Saugat K: 100
+
+
+
+
+
+Saugat K: 1001644419
+saugat.karki@mavs.uta.edu
+Contact phone number: 8174375349
+
+Search function works only for vital signs.
+
 Implementations:
+Vital Signs: 
+-Enter Vital Signs (glucose, cholesterol, blood pressure, heart rate)
+-Necessary validations if not entered correctly
+-Review information regarding vital signs
+-Submit vital signs
+-Update vital signs
+
+Search: 
+-Users can search for their username
+-If the Vital Signs data has been previously added or updated, users can search for any of the vital Signs. 
 
 Resources: //add all resources
 
